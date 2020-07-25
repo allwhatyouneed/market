@@ -103,6 +103,31 @@
 						</div>
 					</article>
 				</div>
+				<div class="container" style="padding-left:72px; padding-right:72px;">
+
+<div class="w3-content w3-section" >
+  <img class="mySlides" src="images/1.jpg" style="width:100%; height:500px">
+  <img class="mySlides" src="images/2.jpg" style="width:100%;height:500px">
+  <img class="mySlides" src="images/3.jpg" style="width:100%;height:500px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
 			</section>
 	<!-- Two --><!--
 			<section id="two" class="wrapper special">
@@ -125,35 +150,7 @@
 				</div>
 			</section>-->
 <!--slider-->
-<br>
-<section>
-<header class="major narrow">
-						<h2>ALL ABOUT YOU NEED PRODUCTS GALLERY</h2>
-						<p></p>
-					</header>
-<div class="w3-content w3-section" >
-  <img class="mySlides" src="images/1.jpg" style="width:80%; height:500px">
-  <img class="mySlides" src="images/2.jpg" style="width:80%;height:500px">
-  <img class="mySlides" src="images/11.jpg" style="width:80%;height:500px">
-</div>
 
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-</section>
 <br>
 <br>
 		<!-- Three -->
