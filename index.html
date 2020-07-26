@@ -12,6 +12,35 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--Script for Scrolling to About-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+		
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+		
+			  // Store hash
+			  var hash = this.hash;
+		
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+		   
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			  });
+			} // End if
+		  });
+		});
+		</script>
+<!--Script ends for scrolling to about-->
 
 		<script type="text/javascript">
 			(function () {
@@ -46,10 +75,9 @@
 			<nav id="nav">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					
-					
 					<li><a href="services.html">Our Services</a></li>
-					<li><a href="#">About Us</a></li>
+					<li><a href="privacy-policy.html">Privacy Policy</a></li>
+					<li><a href="#three">About Us</a></li>
 				</ul>
 			</nav>
 
