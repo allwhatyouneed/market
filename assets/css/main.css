@@ -2652,6 +2652,7 @@
 			background-color: #51BAA4;
 			box-shadow: none;
 			color: #fff !important;
+			MARGIN-TOP: 10PX;
 		}
 
 			input[type="submit"].special:hover,
@@ -2848,8 +2849,8 @@
 	}
 
 		.wrapper > .inner {
-			margin: -93px auto;
-    margin-bottom: -110px;
+			margin: 0px auto;
+    
     width: 70em;
 		}
 
