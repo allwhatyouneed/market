@@ -9,6 +9,36 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--Script for Scrolling to About-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+		
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+		
+			  // Store hash
+			  var hash = this.hash;
+		
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+		   
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			  });
+			} // End if
+		  });
+		});
+		</script>
+<!--Script ends for scrolling to about-->
+
 <style> 
 	
 	/* Wildcard styling */
@@ -150,8 +180,9 @@
 			<nav id="nav">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="services.html">our services</a></li>
-					<li><a href="elements.html"></a></li>
+					<li><a href="services.html">Our Services</a></li>
+					<li><a href="privacy-policy.html">Privacy Policy</a></li>
+					<li><a href="#three">About Us</a></li>
 				</ul>
 			</nav>
 <BR>
@@ -424,26 +455,29 @@
 
 
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.facebook.com/All-About-You-Need-107780197690660" target="_blank" class="icon fa-facebook">
-							<span class="label">Facebook</span>
-						</a></li>
-						
-						<li><a href="https://www.instagram.com/allaboutyouneedaayn/" target="_blank" class="icon fa-instagram">
-							<span class="label">Instagram</span>
-						</a></li>
-						<li><a href="#"  target="_blank" class="icon fa-linkedin">
-							<span class="label">LinkedIn</span>
-						</a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; allaboutyouneed</li>
-						
-					</ul>
-				</div>
-			</footer>
+		<footer id="footer">
+			<div class="inner">
+			
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/All-About-You-Need-107780197690660" target="_blank"class="icon fa-facebook">
+						<span class="label">Facebook</span>
+					</a></li>
+					<li><a href="#" target="_blank" class="icon fa-twitter">
+						<span class="label">Twitter</span>
+					</a></li>
+					<li><a href="https://www.instagram.com/allaboutyouneedaayn/" target="_blank" class="icon fa-instagram">
+						<span class="label">Instagram</span>
+					</a></li>
+				<li><a href="#" target="_blank" class="icon fa-pinterest">
+						<span class="label">Pintrest</span>
+					</a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy;<a href="http://allaboutyouneed.com"> allaboutyouneed</a></li>
+					
+			</div>
+		</footer>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
