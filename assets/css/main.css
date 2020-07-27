@@ -2616,7 +2616,7 @@
 	.button {
 		background-color: #25383B;
 		box-shadow: none;
-		color: #fff !important;
+		color: #fff ;
 	}
 
 		input[type="submit"].icon:before,
@@ -2651,7 +2651,7 @@
 			background-color: #51BAA4;
 			box-shadow: none;
 			color: #fff !important;
-			MARGIN-TOP: 10PX;
+			    margin: 10px;
 		}
 
 			input[type="submit"].special:hover,
@@ -2871,7 +2871,7 @@
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-				color: #555;
+				color: #51baa4;;
 			}
 
 			.wrapper.style1 blockquote {
@@ -3327,7 +3327,7 @@
 			background-color: #1E2832;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed;
-			
+			background-image: url(images/overlay.png), url(../../images/banner.jpg);
 			background-size: cover;
 		}
 

@@ -41,15 +41,8 @@
 
 <style> 
 	
-	/* Wildcard styling */
-	* { 
-		box-sizing: border-box; 
-	} 
-		
-	/* Padding for whole body */
-	body { 
-		padding: 15px; 
-	} 
+
+	
 		
 	.container { 
 		max-width: 1200px; 
@@ -117,23 +110,7 @@
 	.show { 
 		display: block; 
 	} 
-		
-	/* Style the filter buttons */
-	.bttn { 
-		border: none; 
-		padding: 8px 14px; 
-		background-color: gray; 
-	} 
-		
-	.bttn:hover { 
-		background-color: #007EE5; 
-		opacity: 0.8; 
-	} 
-		
-	.bttn.active { 
-		background-color: #007EE5; 
-		color: white; 
-	} 
+	
 	
 	/* Window size 850 width set */
 	@media screen and (max-width: 850px) { 
@@ -150,6 +127,31 @@
 	} 
 	H3{
 	TEXT-ALIGN:CENTER;}
+	button {
+   display: inline-block; 
+   padding: .938em 1.875em;
+   border: .094em solid black; 
+   border-radius: .325em;
+   background-color: #51baa4;
+   box-shadow: 0 .375em .313em -0.313em rgba(0,0,0,.8), inset 0 .063em rgba(255,255,255,.4), inset 0 -0.188em rgba(0,0,0,.15);
+   color: #FFF;
+   text-decoration: none;
+   text-transform: uppercase;
+   text-shadow: 0 .063em #000;
+   cursor:pointer;
+   font: bold 20px sans-serif;
+   margin: 3px;
+}
+button:hover {
+   background-color: white;
+   box-shadow: 0 .125em rgba(255,255,255,.4), inset 0 .063em rgba(255,255, 255,.4), inset 0 -0.188em #51baa4;
+   color:#51baa4;
+}
+button:active {
+ box-shadow: 0 .375em .313em -0.313em rgba(0,0,0,.8), inset 0 .063em rgba(255,255,255,.4), inset 0 -0.188em rgba(0,0,0,.15);
+   color: #FFF;
+  
+}
 </style> 
 <script type="text/javascript">
 			(function () {
@@ -182,7 +184,7 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="services.html">Our Services</a></li>
 					<li><a href="privacy-policy.html">Privacy Policy</a></li>
-					<li><a href="#three">About Us</a></li>
+					<li><a href="index.html#three">About Us</a></li>
 				</ul>
 			</nav>
 <BR>
@@ -197,23 +199,23 @@
   
         <!-- Button foreach group -->
         <div id="filtering"> 
-            <button class="button special"
+            <button
                     onclick="geeksportal('all')">  
             Show all 
             </button> 
-            <button class="button special"
+            <button 
                     onclick="geeksportal('Markup')">  
             WOODEN PRODUCTS
             </button>
- <button class="button special"
+ <button 
                     onclick="geeksportal('LENS')">  
            CONTECT LENS
             </button>			
-            <button class="button special"
+            <button 
                     onclick="geeksportal('Style')">  
             HOME DECORE
             </button> 
-            <button class="button special"
+            <button 
                     onclick="geeksportal('Scripting')">  
             CUSTOMIZED ARTICLE
             </button> 
